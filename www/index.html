@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jobs</title>
+        <script src="js/lib/require.js"></script>
+        <script>
+            require(['./js/common'], function (common) {
+
+                // this is the main module for this page
+                require(['app/main']);
+
+                // this is how I integrate workable
+                require(['jquery', 'whr'], function ($, whr) {
+                    // we don't actually need a reference to whr as the function we need is exposed 
+                    // on the host object as "whr_embed"
+                    $(function () {
+                        whr_embed("MY_ACCOUNT_ID", {detail: 'titles', base: 'jobs', zoom: 'country', grouping: 'none'});
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="whr_embed_hook"></div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "workable_amd_jobs",
+  "version": "0.0.0",
+  "description": "sample app demonstrating how to embed the job listing script in a requirejs (AMD) environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/th3hunt/workable_amd_jobs.git"
+  },
+  "author": "Stratos Pavlakis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/th3hunt/workable_amd_jobs/issues"
+  },
+  "homepage": "https://github.com/th3hunt/workable_amd_jobs",
+  "devDependencies": {
+    "local-web-server": "~0.5.15"
+  }
+}
